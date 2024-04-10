@@ -2,6 +2,10 @@
 #include <array>
 #include <vector>
 #include <deque>
+#include <map>
+#include <set>
+
+#include<unordered_set>
 using namespace std;
 
 
@@ -11,6 +15,62 @@ using namespace std;
 int main() {
 
 
+unordered_set<string> uset ; 
+uset.insert("bingo ");
+uset.insert("is ");
+uset.insert("my ");
+uset.insert("namo ");
+
+
+for (auto it = uset.begin(); it!= uset.end() ; it++ ){
+
+    cout<<*it <<"  "<<endl;
+}
+
+
+/*
+
+ multimap<int,int> mset ; 
+
+mset.insert(pair<int,int>(1,3)) ; 
+mset.insert(pair<int,int>(2,4)) ; 
+mset.insert(pair<int,int>(1,2)) ; 
+
+
+
+
+for (auto it = mset.begin(); it!= mset.end() ; it++ ){
+
+    cout<<it->first << " & "<< it->second <<endl;
+}
+
+
+  
+
+
+
+
+
+
+/*
+   map<int, int> gquiz1;
+ 
+    // insert elements in random order
+    gquiz1.insert(pair<int, int>(4, 20));
+    gquiz1.insert(pair<int, int>(5, 50));
+    gquiz1.insert(pair<int, int>(6, 50));
+    gquiz1.insert(pair<int, int>(1, 40));
+    gquiz1.insert(pair<int, int>(2, 30));
+    gquiz1.insert(pair<int, int>(3, 60));
+       gquiz1.insert(pair<int, int>(4, 60));
+ 
+
+for (auto it = gquiz1.begin() ; it != gquiz1.end() ; it++)
+ {
+    cout << it->first <<"  " << it->second <<endl;
+ }
+
+/*
 deque<int> testDqueue ; 
 
 testDqueue.push_front(1);
