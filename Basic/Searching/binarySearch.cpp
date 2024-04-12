@@ -1,5 +1,39 @@
 #include <iostream>
+#include <string>
 using namespace std ; 
+
+
+int insertionsSort(int a[] , int length){
+
+ for(int i =1 ; i < length ; i++){
+
+    int temp = a[i];
+    int j =i-1 ;
+
+    for( ; j >=0 ; j--){
+
+       if( a[j]  > temp ){
+           a[j+1 ] = a[j] ;
+       
+       }
+       else{
+
+      
+            break;
+       }
+
+    
+
+    }
+       a[j+1] = temp ; 
+
+
+ }
+
+
+
+}
+
 
 int selectionSort(int a[] , int length){
 
@@ -61,23 +95,41 @@ int binarySearch( int a[], int start_index, int end_index, int value){
 
 int main() {
 
+
+int ab = 123 ; 
+string s = "ab ";
+s = s +to_string(ab);
+cout<<" printing string " <<s<<endl;
+
+
 int a[] = {7,9,3,6,23,40,1,2} ; 
+int b[] = {7,9,3,6,23,40,1,2} ; 
+int c[] = {7,9,3,6,23,40,1,2} ; 
+
+insertionsSort(c,8);
+
+cout <<endl<<"insertion sort -> ";
+for(int i =0 ; i <8 ;i++){
+
+    cout << c[i] <<" ";
+}
+
 
 /* swap the smallest one at the begining or end */
 selectionSort(a,8);
 
-cout <<"selection sort -> ";
+cout <<endl << "selection sort -> ";
 for(int i =0 ; i <8 ;i++){
 
     cout << a[i] <<" ";
 }
 /* compare adjesent and swap the order */
-bubblesort(a,8);
+bubblesort(b,8);
 
 cout <<endl<<"bubble sort -> ";
 for(int i =0 ; i <8 ;i++){
 
-    cout << a[i] <<" ";
+    cout << b[i] <<" ";
 }
 
 
