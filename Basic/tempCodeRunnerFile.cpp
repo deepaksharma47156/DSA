@@ -1,1 +1,1 @@
-sizeof(a)/sizeof(int) 
+||  a[int(word[i] - 'A')] == 3
