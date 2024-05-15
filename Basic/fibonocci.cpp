@@ -31,7 +31,7 @@ int main()
 
         int input ;
       //  cin >> input ;
-      input =7 ;
+      input =5 ;
 
          int output ;
          vector<int> Memo;
@@ -39,7 +39,7 @@ int main()
             Memo.push_back(-1);
          }
 
-         output = fibonacci(input,Memo );
+      //   output = fibonacci(input,Memo );
 
          cout << output;
    return 0;
